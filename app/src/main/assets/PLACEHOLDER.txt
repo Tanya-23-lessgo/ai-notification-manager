@@ -1,0 +1,5 @@
+Place your model files here:
+- model_quantized.onnx
+- vocab.txt
+- tokenizer.json
+- label_map.json
