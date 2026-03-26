@@ -1,15 +1,44 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+### Android / Gradle / IntelliJ / Android Studio
+
+## OS
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+Thumbs.db
+
+## Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+## Local config (often contains machine paths / secrets)
 local.properties
+
+## IntelliJ / Android Studio
+*.iml
+.idea/
+out/
+
+## Android Studio tooling & generated
+captures/
+.externalNativeBuild/
+.cxx/
+
+## Kotlin
+.kotlin/
+
+## Logs
+*.log
+
+## APK / AAB / Dex / ART / Proguard
+*.apk
+*.aab
+*.dex
+*.class
+bin/
+gen/
+
+## Keystores (do NOT commit)
+*.jks
+*.keystore
+
+## Firebase / Google Services (optional; keep tracked if your team commits it)
+# google-services.json
