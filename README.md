@@ -246,18 +246,33 @@ Logs were used to verify:
 ```
 ai-notification-manager/
 │
-├── model_training.ipynb
-├── model_onnx_quantized.ipynb
-├── android_app/
-│   ├── assets/
-│   │   ├── model_quantized.onnx
-│   │   ├── vocab.txt
-│   │   └── label_map.json
-│   ├── ModelRunner.java
-│   ├── Tokenizer.java
-│   └── NotificationListener.java
-├── screenshots/
+├── app/                          # Android application source code
+├── .gradle/                      # Gradle build system files
+├── gradle/                       # Gradle wrapper files
+│
+├── screenshots/                  # Project screenshots for README
+│
+├── model_onnx.ipynb              # ONNX conversion notebook
+├── model_onnx_quantized.ipynb    # Quantization notebook
+│
+├── build.gradle.kts              # Project build configuration
+├── settings.gradle.kts           # Project settings
+├── gradle.properties             # Gradle properties
+├── gradlew                       # Gradle wrapper (Linux/Mac)
+├── gradlew.bat                   # Gradle wrapper (Windows)
+│
+├── .gitignore                    # Git ignore rules
+├── README.md                     # Project documentation
 ```
+
+---
+
+## Contributions
+
+* Model training and fine-tuning using DistilBERT
+* Conversion of trained model to ONNX format
+* Model quantization for mobile optimization
+* Development of deployment-ready model pipeline
 
 ---
 
