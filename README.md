@@ -242,3 +242,26 @@ Logs were used to verify:
 ---
 
 ## Project Structure
+
+```
+ai-notification-manager/
+│
+├── model_training.ipynb
+├── model_onnx_quantized.ipynb
+├── android_app/
+│   ├── assets/
+│   │   ├── model_quantized.onnx
+│   │   ├── vocab.txt
+│   │   └── label_map.json
+│   ├── ModelRunner.java
+│   ├── Tokenizer.java
+│   └── NotificationListener.java
+├── screenshots/
+```
+
+---
+
+## Conclusion
+
+This project demonstrates how transformer-based NLP models can be optimized and deployed on mobile devices to solve real-world problems like notification overload.
+
